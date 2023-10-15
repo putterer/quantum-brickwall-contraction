@@ -23,6 +23,6 @@ To execute the unit tests after building, run:
 To use the computation as part of your own application, take a look at `all-hole-gradient.cpp` and `all-hole-hessian.cpp` as an example on how to use the contraction code as a blackbox for computing gradient and Hessian of your brickwall circuits.
 
 ## Configuration
-The contraction process is configured using a `CircuitGateConfiguration`. It can be generated from a list of pairs specifying the qubits on which the gates act using the `generateLayerConfigurationFromGates()` function from `contraction/contraction_utility.h`.
+The contraction process is configured using a `CircuitGateConfiguration`. It can be built from layer configurations. Those can be generated from a list of pairs specifying the qubits on which the gates act using the `generateLayerConfigurationFromGates()` function from `contraction/contraction_utility.h`.
 
 You also might want to take a look at changing `PARALLEL_THREAD_COUNT` in `contraction/contraction.h` to match your hardware.
